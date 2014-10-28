@@ -6,7 +6,12 @@
 	<body>
 		<?php
 		$myName = 'Hi my name is Luca';
-
+		$Name = 'bob';
+		echo $myName;
+		if($Name === 'Luca'){
+			//echo 'i know you';
+		}
+		
 		?>
 		
 	
