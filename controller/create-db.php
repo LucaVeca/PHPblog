@@ -24,5 +24,20 @@
 		}
 
 	}
+	else{
+		echo "Database has already been created";
+	}
+
+	//Table within the database
+	$query = $connection->query("CREATE DATABASE posts ("
+		//columns in table
+		//id
+		. "id int(11) NOT NULL AUTO_INCREMENT,"
+		//title		
+		. "title varchar(255) NOT NULL,"
+		//post
+		. "post text NOT NULL,"
+		//way tables are connected to each other
+		. "PRIMARY KEY(id))");
 
 	$connection->close();
