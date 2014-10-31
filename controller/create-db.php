@@ -20,7 +20,7 @@
 		$query = $connection->query("CREATE DATABASE $database");
 
 		if($query){
-			echo "Successfully created database; " . $database;
+			echo "<p>Successfully created database; " . $database . "</p>";
 		}
 
 	}
@@ -29,7 +29,7 @@
 	}
 
 	//Table within the database
-	$query = $connection->query("CREATE DATABASE posts ("
+	$query = $connection->query("CREATE TABLE posts ("
 		//columns in table
 		//id
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
@@ -39,5 +39,12 @@
 		. "post text NOT NULL,"
 		//way tables are connected to each other
 		. "PRIMARY KEY(id))");
+
+	if($query){
+			echo "Successfully created table: posts";
+	}
+	else {
+		echo "<p>$connection->error</p>";
+	}
 
 	$connection->close();
