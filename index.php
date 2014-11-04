@@ -13,6 +13,8 @@
 	
 	//requires header
 	require_once(__DIR__ . "/view/header.php");
+	//requires navigation
+	require_once(__DIR__ . "/view/navigation.php");
 	require_once(__DIR__ . "/controller/create-db.php");
 	//requires footer
 	require_once(__DIR__ . "/view/footer.php");

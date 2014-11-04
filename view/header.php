@@ -1,4 +1,4 @@
-//The top half, or header of the webpage
+<!The top half, or header of the webpage>
 <html>
 	<head>
 		<meta chartset="UTF-8">
