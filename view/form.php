@@ -14,4 +14,8 @@
 		<!--allows user to type more with multiple lines-->
 		<textarea name="post"></textarea>
 	</div>
+
+	<div>
+		<button type="submit">Submit</button>
+	</div>
 </form>
