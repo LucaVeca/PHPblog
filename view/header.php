@@ -20,7 +20,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://oleaass.com/wp-content/uploads/2014/10/Random-truths18.jpg" alt="...">
+      <img src="http://2ksjbh44hk54113rf2pk9bis06.wpengine.netdna-cdn.com/wp-content/uploads/2013/11/Dancing-Homer-Gif.gif" alt="...">
       <div class="carousel-caption">
         ...
       </div>
