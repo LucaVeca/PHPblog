@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="http://k32.kn3.net/taringa/1/7/6/3/3/2/08/khoera/48F.gif" alt="...">
+	<img src="http://media.giphy.com/media/5JhUbtgDaLeFi/giphy.gif" alt="...">
       <div class="carousel-caption">
         ...
       </div>
