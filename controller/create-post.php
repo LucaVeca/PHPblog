@@ -9,9 +9,15 @@
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	//filters post that comes from the post and makes sure its a string
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
-	//echo the title
-	echo "<p>Title: $title</p>";
-	//echo the post
-	echo "<p>Post: $post</p>";
+	
+	//query to insert info into either the title or the posts
+	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+
+	if($query){
+		echo "<p>Successfully inserted post: $title</p>";
+	}
+	else{
+		echo "<p>$connection->error</p>";
+	}
 
 	$connection->close();
