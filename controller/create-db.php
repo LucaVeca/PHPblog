@@ -1,6 +1,6 @@
 <?php
 	//links to database.php
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 
 	//conects with the classes in database.php
 	$connection = new mysqli($host, $username, $password);

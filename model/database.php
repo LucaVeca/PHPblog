@@ -1,6 +1,9 @@
 <?php
-
-	$host = "localhost";
-	$username = "root";
-	$password = "root";
-	$database = "blog_db";
+//helps organize code 
+class Database{
+	private $connection;
+	private $host;
+	private $username;
+	private $password;
+	private $database;
+}
