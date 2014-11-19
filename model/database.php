@@ -40,6 +40,13 @@ class Database{
 	}
 
 	public function query($string){
-		
+		$this->openConnection();
+
+		//executes query on database
+		$query = $this->connection->query($string);
+
+		$this->closeConnection();
+
+		return $query;
 	}
 }

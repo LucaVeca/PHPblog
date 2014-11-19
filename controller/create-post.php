@@ -20,5 +20,3 @@
 	else{
 		echo "<p>$connection->error</p>";
 	}
-
-	$connection->close();

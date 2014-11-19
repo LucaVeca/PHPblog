@@ -2,9 +2,6 @@
 	//links to database.php
 	require_once(__DIR__ . "/../model/config.php");
 
-	//conects with the classes in database.php
-	$connection = new mysqli($host, $username, $password);
-
 	//checks whether or not there was an error connecting to the database
 	if($connection->connect_error){
 		die("Error: "  . $connection->connect_error);
