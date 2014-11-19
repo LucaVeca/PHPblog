@@ -20,11 +20,22 @@ class Database{
 		$this->database = $database;
 	}
 
+	//A function is a block of statements that can be used repeatedly in a program.
 	public function openConnection(){
+		//establishes new connection
+		$this->connection = new msqli($this->host, $this->username, $this->password, $this->database);
 
+		//checks whether or not there was an error connecting to the database
+		if($connection->connect_error){
+			die("Error: "  . $this->connection->connect_error);
+
+		}
 	}
 
 	public function closeConnection(){
+		if(isset($this->connection)){
+			$this->connection->close();
+		}
 		
 	}
 
