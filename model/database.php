@@ -11,22 +11,50 @@ class Database{
 	private $username;
 	private $password;
 	private $database;
+	public $error;
 
 	//establishes connection to global variables
-	public function__ construct($host, $username, $password, $database){
+	public function __construct($host, $username, $password, $database){
 		$this->host = $host;
 		$this->username = $username;
 		$this->password = $password;
 		$this->database = $database;
+
+		//conects with the classes in database.php
+		$this->connection = new mysqli($host, $username, $password);
+
+		//checks whether or not there was an error connecting to the database
+		if($this->connection->connect_error){
+			die("Error: "  . $this->connection->connect_error);
+
+		}
+
+		$exists = $this->connection->select_db($database);
+	
+		//checking if we could connect to database
+		//! checks if database doesn't exist
+		//creates database with sql
+		if(!$exists){
+			$query = $this->connection->query("CREATE DATABASE $database");
+
+			if($query){
+				echo "<p>Successfully created database; " . $database . "</p>";
+			}
+		}
+
+		else{
+			echo "Database has already been created";
+		}
+
 	}
 
 	//A function is a block of statements that can be used repeatedly in a program.
 	public function openConnection(){
 		//establishes new connection
-		$this->connection = new msqli($this->host, $this->username, $this->password, $this->database);
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 		//checks whether or not there was an error connecting to the database
-		if($connection->connect_error){
+		if($this->connection->connect_error){
 			die("Error: "  . $this->connection->connect_error);
 
 		}
@@ -44,6 +72,10 @@ class Database{
 
 		//executes query on database
 		$query = $this->connection->query($string);
+
+		if(!$query){
+			$this->error = $this->connection->error;
+		}
 
 		$this->closeConnection();
 
