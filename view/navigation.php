@@ -4,6 +4,6 @@
 ?>
 <nav>
 	<ul>
-		<li id="text1"><h1><a href="<?php /*says location of post.php file*/echo $path . "post.php" ?>">Blog Post Form</a></h1></li>
+		<li ><h1 ><a id="text1" href="<?php /*says location of post.php file*/echo $path . "post.php" ?>">Blog Post Form</a></h1></li>
 	</ul>
 </nav>

@@ -18,4 +18,5 @@
 	require_once(__DIR__ . "/controller/create-db.php");
 	//requires footer
 	require_once(__DIR__ . "/view/footer.php");
+	require_once(__DIR__ . "/controller/read-posts.php")
 	?>

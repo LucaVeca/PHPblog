@@ -1,7 +1,8 @@
+
 <?php
 	require_once(__DIR__ . "/../model/config.php");
 ?>
-
+<div id="page2">
 <h1 id="text">Create a Blog Post</h1>
 
 <!-- important in locating certain files -->
@@ -10,14 +11,14 @@
 		<!--Title-->
 		<label for="title">Title: </label>
 		<!--on one line-->
-		<input type="text" name="title" />
+		<input id="box" type="text" name="title" />
 	</div>
 
 	<div id="text">
 		<!--Post-->
 		<label for="post">Post: </label>
 		<!--allows user to type more with multiple lines-->
-		<textarea name="post"></textarea>
+		<textarea id="box2" name="post"></textarea>
 	</div>
 
 	<div>

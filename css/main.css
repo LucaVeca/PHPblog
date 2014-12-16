@@ -1,10 +1,11 @@
 body{
-	background: url(../images/desert.jpg) no-repeat center center fixed; 
+	background: url(../images/bridge.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	text-align: center;
+  margin-left: 20px;
+
 }
 
 @media(max-width: 320px) {
@@ -14,10 +15,17 @@ body{
 
   }
 
-  #carousel-example-generic{
-  	width: 500px;
-	margin: 0 auto;
-	margin-top: 20px;
+  .post{
+    width: 900px;
+    background-color: black;
+    opacity: .5;
+    padding: 10px 10px 10px 10px;
+    color: white;
+  
+  }
+
+  #posts{
+    color: white;
   }
 
   #button{
@@ -30,12 +38,15 @@ body{
 
   #text{
   	font-family: 'Concert One', cursive;
+    color: white;
+    margin-left: 30px;
   }
 
   #text1{
-	margin-top: 80px;
-	color: #4040E6;
+    color: white;
+	margin-top: 150px;
   	font-family: 'Concert One', cursive;
+  margin-left: 30px;
   }
 
   .up {
@@ -46,3 +57,4 @@ body{
   -webkit-box-shadow: 1px 1px 0 #c0392b, 2px 2px 0 #c0392b, 3px 3px 0 #c0392b, 4px 4px 0 #c0392b, 5px 5px 0 #c0392b, 6px 6px 0 #c0392b, 7px 7px 0 #c0392b, 8px 8px 0 #c0392b, 8px 8px 0 #c0392b, 9px 9px 0 #c0392b, 10px 10px 0 #c0392b;
   -webkit-transform: translate3d(-5px, -5px, -5px);
 }
+
