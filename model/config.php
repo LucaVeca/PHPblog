@@ -2,7 +2,7 @@
 	require_once(__DIR__."/database.php");
 	session_start();
 	//continuously regenerates id
-	// session_regenerate_id(true);
+	session_regenerate_id(true);
 
 	$path = "/PHPblog/";
 
