@@ -1,6 +1,7 @@
 
 <?php
 	require_once(__DIR__ . "/../model/config.php");
+	}
 ?>
 <div id="page2">
 <h1 id="text">Create a Blog Post</h1>

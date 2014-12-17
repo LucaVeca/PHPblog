@@ -10,9 +10,8 @@
 	if($result){
 		//creates a loop that runs while there is a post that is able to be selected
 		while($row = mysqli_fetch_array($result)){
-			echo "<div class='post'>";
 			//opens the dive and gives it the class 'posts'
-			echo "<article class='posts readmore-js-section readmore-js-collapsed'>";
+			echo "<article class='post' class='posts readmore-js-section readmore-js-collapsed'>";
 			//displays the title of the post
 			echo "<h2>" . $row['title'] . "</h2>";
 			echo "<br />";
@@ -21,7 +20,7 @@
 			//displays when the post was created
 			echo "<h5>Posted on: " . $row['DateTime'] . "</h5>";
 			echo "<br/>";
-			echo "</div";
+			echo "</article>";
 			
 		}
 	}
