@@ -16,6 +16,10 @@
 			<button type="button" class="btn btn-default btn-lg link">
 				<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-user "></span></p> Register </a>
 			</button>
+			<button type="button" class="btn btn-default btn-lg link">
+				<a href="<?php echo $path . "login.php"?>"> <span class="glyphicon glyphicon-log-in"></span></p>Login </a>
+			</button>
+			
 		</ul>
 	</div>
 
