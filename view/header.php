@@ -11,7 +11,15 @@
 	</head>
 	<body>
 
-		
+	<div>
+		<ul>
+			<button type="button" class="btn btn-default btn-lg link">
+				<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-user "></span></p> Register </a>
+			</button>
+		</ul>
+	</div>
+
+
 
 
  

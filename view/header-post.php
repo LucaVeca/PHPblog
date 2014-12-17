@@ -13,9 +13,4 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/readmore.js"></script>
 
-  <script>
- $('#test').readmore({
-  speed: 75,
-  maxHeight: 100
-});
-  </script>
+ 
