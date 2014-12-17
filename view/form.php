@@ -5,6 +5,7 @@
 
 	//checking whether or not user has been logged in
 	if(!authenticateUser()){
+		header("Location: " . $path . "index.php");
 		die();
 	}
 ?>
