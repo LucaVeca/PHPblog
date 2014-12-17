@@ -20,6 +20,9 @@
 				<a href="<?php echo $path . "login.php"?>"> <span class="glyphicon glyphicon-log-in"></span></p>Login </a>
 			</button>
 			
+			<button type="button" class="btn btn-default btn-lg link">
+				<a href="<?php echo $path . "controller/logout-user.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
+			</button>
 		</ul>
 	</div>
 
